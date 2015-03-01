@@ -6,14 +6,17 @@ $gray-dark          : #999;
 $gray               : #ccc;
 $gray-light         : #ddd;
 $gray-lighter       : #eee;
-$gray-lightest      : #f8f8f8;
+$gray-lightest      : #ffffff;
 
 $green              : #156f78;
 $red                : #c0392b;
 $purple             : #493252;
 $slate              : #3d4260;
 
-$primary-color      : lighten(#156f78, 20%);
+$main-color         : #0C212D;
+
+// $primary-color      : lighten($main-color, 20%);
+$primary-color      : $main-color;
 $secondary-color    : $gray-dark;
 
 $link-color         : $gray-darkest;

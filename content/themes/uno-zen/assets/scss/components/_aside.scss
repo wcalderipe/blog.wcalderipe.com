@@ -1,3 +1,7 @@
+#links-wrapper {
+  margin-top: 15px;
+}
+
 .cover {
   position: fixed;
   z-index: 900;
@@ -11,6 +15,10 @@
   }
   &.collapsed {
     width: $aside-width-collapsed;
+
+    & #links-wrapper div.profile.contact {
+      margin-top: 15px;
+    }
   }
   &.container {
     font-weight: $font-weight-thin;
