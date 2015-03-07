@@ -1,18 +1,35 @@
+<meta name="Title" content="{{meta_title}}">
+<meta name="Keywords" content="wcalderipe, development, programming, javascript, php, sql, tutorials, programming tutorials, tips">
+<meta name="Description" content="{{meta_description}}">
+<meta name="Author" content="William Calderipe">
+<meta name="Subject" content="Development tutorials, tips, ideas, news and more.">
+<meta name="Language" content="en">
+
 <meta property="og:title" content="{{meta_title}}" />
 <meta property="og:description" content="{{meta_description}}" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="{{@blog.title}}">
 <meta property="og:url" content="{{@blog.url}}{{url}}"/>
-<meta property="og:image" content="{{@blog.cover}}" />
+<meta property="og:image" content="{{@blog.url}}{{@blog.cover}}" />
+
 <meta name="twitter:title" content="{{meta_title}}" />
 <meta name="twitter:description" content="{{meta_description}}" />
 <meta name="twitter:url" content="{{@blog.url}}{{url}}" />
-{{#if @blog.cover}}
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:image:src" content="{{@blog.url}}{{@blog.cover}}" />
-{{else}}
-  {{#if @blog.logo}}
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:image:src" content="{{@blog.url}}{{@blog.logo}}" />
-  {{/if}}
-{{/if}}
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image:src" content="{{@blog.url}}{{@blog.cover}}" />
+
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "WebPage",
+  "name": "wcalderipe's blog",
+  "description": "wcalderipe's blog",
+  "publisher": {
+    "@type": "Person",
+    "name": "William Calderipe",
+    "image": "//www.gravatar.com/avatar/ba952eed22021a8d5604d9e72edcc2ee?s=250&d=mm&r=x",
+    "url": "http://blog.wcalderipe.com/author/william",
+    "sameAs": null
+  }
+}
+</script>
